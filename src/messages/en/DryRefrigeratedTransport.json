@@ -1,0 +1,77 @@
+{
+    "hero":{
+        "title":"Dry and Refrigerated Transport",
+        "desc":"We offer transportation services that keep dry and refrigerated goods in optimal condition, ensuring timely deliveries.",
+        "button":"Book Your Service"
+    },
+    "dryRefrigeratedTransportDesc":{
+        "title":"Dry and cool transport <span>full readiness</span> for any shipment type",
+        "desc":"Our dry and cold transportation service maintains the quality of all types of goods during transit. Our vehicles are equipped for both standard and refrigerated needs, making it ideal for safe and organized product transport."
+    },
+    "dryRefrigeratedTransportFeatures":{
+        "title":"Discover why Femex is your <span>top choice</span> for dry and refrigerated transportation services.",
+        "desc":{
+            "descOne":"Vehicles equipped for dry and refrigerated transportation",
+            "descTwo":"Monitoring and maintaining the appropriate temperatures of goods",
+            "descThree":"Safe transportation over short and long distances",
+            "descFour":"A team specialized in handling sensitive goods"
+        }
+    },
+    "howItWorks":{
+        "title":"How does dry and refrigerated transportation work?",
+        "desc":"Clear steps to ensure a stable and safe transportation journey",
+        "Cards":{
+            "cardOne":{
+                "number":1,
+                "heading":"Receive shipment details",
+                "desc":"Determine the type of goods and transportation needs"
+            },
+            "cardTwo":{
+                "number":2,
+                "heading":"Prepare the appropriate vehicle",
+                "desc":"Adjust temperature as per requirement"
+            },
+            "cardThree":{
+                "number":3,
+                "heading":"Transport and follow-up",
+                "desc":"Monitor the flight and ensure conditions remain stable"
+            },
+            "cardFour":{
+                "number":4,
+                "heading":"Delivery to the desired destination",
+                "desc":"Delivering goods in their best condition"
+            }
+        }
+    },
+    "commonQuestions":{
+        "desc":"FAQ's",
+        "title":"Questions about the dry and refrigerated transportation",
+        "questions":{
+            "questionOne":{
+                "question":"Are vehicles equipped to maintain temperature?",
+                "answer":"Yes, it is controlled and monitored throughout the journey"
+            },
+            "questionTwo":{
+                "question":"Do you transport shipments over long distances?",
+                "answer":"Yes, depending on the customer's needs and delivery point"
+            },
+            "questionThree":{
+                "question":"Is the service suitable for small quantities?",
+                "answer":"Yes, transportation depends on the type of load and available space"
+            },
+            "questionFour":{
+                "question":"Can the flight be tracked?",
+                "answer":"Yes, the transfer status is updated continuously"
+            },
+            "questionFive":{
+                "question":"How is the cost calculated?",
+                "answer":"Calculated based on shipment type, distance, and transportation needs"
+            }
+        }
+    },
+    "readyStorageServices":{
+        "title":"Ready to start with us?",
+        "desc":"Order your dry or refrigerated moving service now for a safe and dependable experience.",
+        "button":"Book a Service Now"
+    }
+}

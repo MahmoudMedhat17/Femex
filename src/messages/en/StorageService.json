@@ -1,0 +1,77 @@
+{
+    "hero":{
+        "title":"Storage service",
+        "desc":"We provide storage spaces equipped to receive all types of goods with careful follow-up to ensure they are maintained in the best condition",
+        "button":"Book Your Service"
+    },
+    "storageServicesDesc":{
+        "title":"<span>Flexible and secure</span> storage solutions for your goods",
+        "desc":"Our storage service offers a reliable space for your goods, whether for short or long-term needs. We ensure product quality with proper equipment and handle receiving, organizing, and accessing your items efficiently."
+    },
+    "storageServicesFeatures":{
+        "title":"Discover why Femex is your <span>top choice</span> for storage services",
+        "desc":{
+            "descOne":"Equipped warehouses to keep goods in best condition",
+            "descTwo":"Regular monitoring and organization of stored contents",
+            "descThree":"Flexible storage places to suit different sizes and quantities",
+            "descFour":"Round-the-clock security and control measures"
+        }
+    },
+    "howItWorks":{
+        "title":"How does the storage service work?",
+        "desc":"Simple steps to store and manage your goods effortlessly.",
+        "Cards":{
+            "cardOne":{
+                "number":1,
+                "heading":"Receipt of goods",
+                "desc":"Initial preview and sorting before entering the warehouse"
+            },
+            "cardTwo":{
+                "number":2,
+                "heading":"Efficient recording and organization of storage.",
+                "desc":"Place goods in the right place while creating a storage register"
+            },
+            "cardThree":{
+                "number":3,
+                "heading":"Periodic follow-up",
+                "desc":"Ensure the general condition and arrangement of contents when needed"
+            },
+            "cardFour":{
+                "number":4,
+                "heading":"Delivery upon request",
+                "desc":"Prepare the goods and deliver them to any point you specify"
+            }
+        }
+    },
+    "commonQuestions":{
+        "desc":"FAQ's",
+        "title":"Questions about the Storage service",
+        "questions":{
+            "questionOne":{
+                "question":"Are there special equipment for some products?",
+                "answer":"Yes, depending on the type of goods appropriate conditions are provided"
+            },
+            "questionTwo":{
+                "question":"Is there a minimum storage amount?",
+                "answer":"No, any quantity can be stored depending on the available space"
+            },
+            "questionThree":{
+                "question":"Is short-term storage possible?",
+                "answer":"Yes, the service includes short and long periods"
+            },
+            "questionFour":{
+                "question":"Can I visit the store?",
+                "answer":"A visit can be arranged upon request"
+            },
+            "questionFive":{
+                "question":"How is the storage cost calculated?",
+                "answer":"It is calculated according to the required area and period"
+            }
+        }
+    },
+    "readyStorageServices":{
+        "title":"Ready to start with us?",
+        "desc":"Reserve your storage space now and enjoy secure and flexible solutions",
+        "button":"Book a Service Now"
+    }
+}

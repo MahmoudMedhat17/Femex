@@ -1,0 +1,19 @@
+{
+    "Footer": {
+        "footer": {
+            "desc": "A top logistics firm offering global shipping, storage, and supply chain services",
+            "linkOne": "Quick Links",
+            "linkTwo": "Services",
+            "linkThree": "Get in Touch",
+            "home": "Home Page",
+            "whoWeAre": "About Us",
+            "contact": "Contact Us",
+            "parcelDelivery": "Parcel Delivery",
+            "dryAndRefrigeratedTransport": "Dry and Refrigerated Transport",
+            "storageServices": "Storage Services",
+            "customsClearance": "Customs Clearance",
+            "email": "info@Femexs.com",
+            "location": "Saudi Arabia - Jeddah"
+        }
+    }
+}

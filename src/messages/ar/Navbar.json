@@ -1,0 +1,18 @@
+{
+    "Nav": {
+        "navbar": {
+            "home": "الصفحة الرئيسية",
+            "about": "من نحن",
+            "services": "خدماتنا",
+            "contact": "تواصل معنا",
+            "order": "اطلب خدمتك",
+            "langSwitch": "English",
+            "dropDownMenu": {
+                "parcelDelivery": "توصيل الطرود",
+                "dryRefrigeratedTransport": "النقل الجاف والمبرد",
+                "storageService": "خدمه التحزين",
+                "customsClearance": "تخليص جمركي"
+            }
+        }
+    }
+}

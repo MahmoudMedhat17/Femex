@@ -1,0 +1,77 @@
+{
+    "hero":{
+        "title":"Parcel delivery",
+        "desc":"Enjoy a fast and reliable delivery service that ensures your shipments arrive safely and on time",
+        "button":"Book Your Service"
+    },
+    "parcelDesc":{
+        "title":"Deliver packages <span>quickly and safely</span> to your customer",
+        "desc":"Parcel delivery service offers you an easy, safe way to send any package from point to another, with full tracking for every step. We receive, prepare, transport, then deliver to the desired destination accurately and on time. The service suits any activity needing reliable, fast transport solutions without any complexity"
+    },
+    "parcelFeatures":{
+        "title":"Discover why Femex is your <span>top choice</span> for parcel delivery",
+        "desc":{
+            "descOne":"Fast delivery within the same day or within 24-48 hours",
+            "descTwo":"Professional drivers trained to handle sensitive shipments",
+            "descThree":"SMS/WhatsApp notifications upon pickup and delivery",
+            "descFour":"Hand delivered with electronic signature upon receipt"
+        }
+    },
+    "howItWorks":{
+        "title":"How does parcel delivery work?",
+        "desc":"A system of simple and easy steps to ensure a distinctive and reliable delivery experience",
+        "Cards":{
+            "cardOne":{
+                "number":1,
+                "heading":"Register the request",
+                "desc":"Add parcel data and specify the receiving location"
+            },
+            "cardTwo":{
+                "number":2,
+                "heading":"Receiving the package",
+                "desc":"The driver picks up the package from your company"
+            },
+            "cardThree":{
+                "number":3,
+                "heading":"Preparing and transporting",
+                "desc":"The parcel is sorted and the fastest route for delivery is determined"
+            },
+            "cardFour":{
+                "number":4,
+                "heading":"Delivery to the customer",
+                "desc":"Hand delivered with electronic signature and status updated instantly"
+            }
+        }
+    },
+    "commonQuestions":{
+        "desc":"FAQ's",
+        "title":"Questions about the parcel delivery service",
+        "questions":{
+            "questionOne":{
+                "question":"Can I track the status of the package?",
+                "answer":"Yes, we provide you with a dedicated tracking link that shows the status of the shipment, moment by moment"
+            },
+            "questionTwo":{
+                "question":"What is the delivery time?",
+                "answer":"Delivery within the city within the same day or within 24-48 hours depending on pressure and distance"
+            },
+            "questionThree":{
+                "question":"Is there a minimum number of packages?",
+                "answer":"No, you can ship one package or hundreds of packages depending on your needs"
+            },
+            "questionFour":{
+                "question":"Can I deliver international packages?",
+                "answer":"Yes, you can deliver international packages, whether one or several packages, depending on your needs"
+            },
+            "questionFive":{
+                "question":"How much does delivery cost?",
+                "answer":"The cost depends on the city and weight. You can get the price immediately by contacting us"
+            }
+        }
+    },
+    "readyParcel":{
+        "title":"Ready to start with us?",
+        "desc":"Book your parcel delivery now and get fast, secure, real-time shipment updates",
+        "button":"Book your service now"
+    }
+}

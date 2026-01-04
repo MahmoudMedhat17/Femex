@@ -1,6 +1,5 @@
-
-import { useTranslation } from 'react-i18next';
-import Link from 'next/link'
+import { useTranslations, useLocale } from 'next-intl';
+import { Link } from "@/i18n/routing";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
@@ -10,21 +9,22 @@ import ScrollToTop from "@/utils/ScrollToTop";
 
 const Footer = () => {
 
-    const { t, i18n } = useTranslation();
+    const t = useTranslations("Footer");
 
+    const locale = useLocale();
 
-    const isArabic = i18n.language === "ar";
+    const isArabic = locale === "ar";
 
     const direction = isArabic ? "rtl" : "ltr";
 
 
     return (
         <footer className="bg-footerColor" dir={direction}>
-            <div className="mx-auto  space-y-8 px-6 md:px-[50px] lg:px-[70px] xl:px-[100px] py-16">
+            <div className="mx-auto  space-y-8 px-6 md:px-12.5 lg:px-17.5 xl:px-25 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     <div>
                         <Link href={"/"}>
-                            <img src="/assets/footerLogo.png" alt="EMEX-logo" className="w-[126px] h-[100px]" />
+                            <img src="/assets/footerLogo.png" alt="FEMEX-logo" className="w-31.5 h-25" />
                         </Link>
 
                         <p className="mt-4 max-w-xs text-neutralWhite highLineHeight">

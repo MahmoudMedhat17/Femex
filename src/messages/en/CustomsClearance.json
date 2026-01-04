@@ -1,0 +1,77 @@
+{
+    "hero":{
+        "title":"Customs clearance",
+        "desc":"We carry out customs clearance procedures easily and clearly, with continuous follow-up to ensure that your goods exit on time",
+        "button":"Book Your Service"
+    },
+    "customsClearanceDesc":{
+        "title":"<span>Fast customs</span> clearance without complications",
+        "desc":"Our customs clearance service streamlines all necessary procedures and documentation for your goods to pass through customs without delays. We manage paperwork and coordinate with authorities for smooth delivery."
+    },
+    "customsClearanceFeatures":{
+        "title":"Discover why Femex is your <span>top choice</span> for customs clearance services",
+        "desc":{
+            "descOne":"Track procedures from start to finish until your goods are released",
+            "descTwo":"Ensure that all required documents are ready before applying",
+            "descThree":"Reducing the time spent on review and examination",
+            "descFour":"A specialized team follows up the customs file step by step"
+        }
+    },
+    "howItWorks":{
+        "title":"How does the customs clearance service work?",
+        "desc":"Clear steps to facilitate the customs clearance process without complexity",
+        "Cards":{
+            "cardOne":{
+                "number":1,
+                "heading":"Receive shipment details",
+                "desc":"Review basic information and verify requirements"
+            },
+            "cardTwo":{
+                "number":2,
+                "heading":"Handle document preparation",
+                "desc":"Collect the necessary papers and coordinate them with the competent authorities"
+            },
+            "cardThree":{
+                "number":3,
+                "heading":"Check on customs procedures",
+                "desc":"Submit applications, examine, and review until approval"
+            },
+            "cardFour":{
+                "number":4,
+                "heading":"Completing the delivery of your goods.",
+                "desc":"Finishing the procedures and delivering the shipment to the customer or the storage location"
+            }
+        }
+    },
+    "commonQuestions":{
+        "desc":"FAQ's",
+        "title":"Questions about customs clearance service",
+        "questions":{
+            "questionOne":{
+                "question":"What documents are required for customs clearance?",
+                "answer":"It varies according to the type of shipment, and what is required is clarified when starting the order"
+            },
+            "questionTwo":{
+                "question":"How long does the clearance process take?",
+                "answer":"The duration varies depending on the type of goods and procedures, and every step is followed up with you"
+            },
+            "questionThree":{
+                "question":"Are there additional fees during clearance?",
+                "answer":"Any potential costs are explained upfront to ensure transparency"
+            },
+            "questionFour":{
+                "question":"Can you handle all types of shipments?",
+                "answer":"Yes, the service is provided according to the procedures available for each shipment type"
+            },
+            "questionFive":{
+                "question":"How much does customs clearance service cost?",
+                "answer":"The cost varies according to the port and the type of goods, and the price can be obtained upon communication"
+            }
+        }
+    },
+    "readyCustomsClearance":{
+        "title":"Ready to start with us?",
+        "desc":"Request customs clearance service now and enjoy a smooth and clear process from start to finish",
+        "button":"Book a Service Now"
+    }
+}

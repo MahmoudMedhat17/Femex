@@ -1,0 +1,69 @@
+{
+    "hero":{
+        "title":"Contact us",
+        "desc":"Contact us or search for answers in our Frequently Asked Questions section"
+    },
+    "contactUs":{
+        "title":"Book a Service Now",
+        "desc":"Fill in your information or contact us directly through the available methods",
+        "formDetails":{
+            "name":{
+                "label":"Your Name",
+                "placeHolder":"Full Name"
+            },
+            "email":{
+                "label":"Your Email",
+                "placeHolder":"example@gmail.com"
+            },
+            "phone":{
+                "label":"Phone number",
+                "placeHolder":"(+966) 123456784"
+            },
+            "message":{
+                "label":"Write your message",
+                "placeHolder":"Tell us a little about the project..."
+            }
+        },
+        "formService":{
+            "header":"Service type (optional)",
+            "placeHolder":"Choose Your Service type"
+        },
+        "submitButton":"Submit",
+        "notify":"Message sent successfully, we will contact you soon!",
+        "reachUs":{
+            "header":"Other ways to Communication",
+            "socialMedia":{
+                "email":" info@Femexs.com",
+                "phone":"(+966) 598889936",
+                "location":"Saudi Arabia - Jeddah"
+            }
+        }
+    },
+    "commonQuestions":{
+        "header":"FAQ's",
+        "title":"Clear and quick answers",
+        "desc":"Collaboration begins with understanding our offerings. We've compiled key customer questions and provided clear answers to help you decide.",
+        "questions":{
+            "questionOne":{
+                "question":"How is my application processed after I submit the form?",
+                "answer":"Once the request is submitted, our support team will review the details within less than 24 hours, and you will be contacted via your phone number or email to confirm the service and start immediately."
+            },
+            "questionTwo":{
+                "question":"Do I have to specify the service before contacting you?",
+                "answer":"Not necessary. Even if you are unsure of the details of the appropriate service, our team will help you choose the logistics solution that best suits your needs"
+            },
+            "questionThree":{
+                "question":"Will communication be free?",
+                "answer":"naturally. All initial consultations are completely free and without any obligations"
+            },
+            "questionFour":{
+                "question":"What payment methods are available?",
+                "answer":"After we communicate with you and agree on the service and price, we will send you all available payment methods, whether by bank transfer or electronic payment."
+            },
+            "questionFive":{
+                "question":"If I have an expedited shipment, can you handle that?",
+                "answer":"Yes, we have a special system to handle urgent requests. Send the shipment details, and the operations team will respond to you as soon as possible to fulfill the order"
+            }
+        }
+    }
+}

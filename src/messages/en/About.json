@@ -1,0 +1,57 @@
+{
+  "About": {
+    "aboutHero": {
+      "title": "About Us",
+      "desc": "Learn more about Femex Logistics Services Company"
+    },
+    "services": {
+      "title": "We provide logistics solutions to help your <span>business grow</span>",
+      "desc": "FEMEX views logistics as key to success, not merely transport and storage. We provide essential Services:",
+      "ourServices": {
+        "serviceOne": "Parcel delivery",
+        "serviceTwo": "Dry and refrigerated transportation",
+        "serviceThree": "Storage service",
+        "serviceFour": "Customs clearance"
+      },
+      "button": "Book Your Service"
+    },
+    "ourVision": {
+      "cardOne": {
+        "title": "Our message",
+        "desc": "Helping companies manage logistics operations easily and safely with practical, reliable solutions that adapt to their needs."
+      },
+      "cardTwo": {
+        "title": "Our vision",
+        "desc": "We aim to be the region's most trusted logistics partner by developing a modern service system that uses technology and focuses on customer needs."
+      }
+    },
+    "whyusAbout": {
+      "subHeading": "Added Value",
+      "title": "Why choose us?",
+      "desc": "Because the success of your shipment begins with a logistics partner who understands your needs.",
+      "benefitCards": {
+        "cardOne": {
+          "heading": "Specialized Team",
+          "desc": "A professional team with expertise in shipping management, customs clearance, and distribution"
+        },
+        "cardTwo": {
+          "heading": "Competitive Prices",
+          "desc": "We provide the best solutions with top quality at prices suitable for all types of businesses"
+        },
+        "cardThree": {
+          "heading": "Continuous Support",
+          "desc": "Technical support and customer service available 24/7 to track your shipments and answer all your inquiries"
+        },
+        "cardFour": {
+          "heading": "Commitment to Timeliness",
+          "desc": "We ensure that shipments are delivered on time with continuous monitoring throughout the journey"
+        }
+      }
+    },
+    "readyAbout": {
+      "title": "Ready to start with us?",
+      "desc": "From shipment delivery to customs clearance and storage, our team is ready to help you. Reach out today to see how we can improve your logistics",
+      "button": "Book your service now"
+    }
+  }
+}
