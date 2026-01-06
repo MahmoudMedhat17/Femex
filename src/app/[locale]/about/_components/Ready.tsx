@@ -1,7 +1,13 @@
+import ReadyComp from "@/app/common/ReadyComp";
 
 const Ready = () => {
     return (
-        <div>Ready</div>
+        <>
+            <ReadyComp
+                translation="About"
+                translationKey="readyAbout"
+            />
+        </>
     )
 }
 

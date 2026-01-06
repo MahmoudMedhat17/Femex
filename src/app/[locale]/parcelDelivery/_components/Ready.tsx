@@ -4,8 +4,8 @@ const Ready = () => {
     return (
         <>
             <ReadyComp
-                translation="Home"
-                translationKey="ready"
+                translation="ParcelDelivery"
+                translationKey="readyParcel"
             />
         </>
     )
