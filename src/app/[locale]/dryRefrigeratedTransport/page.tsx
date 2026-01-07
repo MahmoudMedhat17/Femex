@@ -1,4 +1,4 @@
-import { CommonQuestions, Description, Features, Hero, HowItWorks, ReadyDryRefrigeratedTransport } from "@/app/[locale]/dryRefrigeratedTransport/_components/index";
+import { CommonQuestions, Description, Features, Hero, HowItWorks, Ready } from "@/app/[locale]/dryRefrigeratedTransport/_components/index";
 
 export default function page() {
     return (
@@ -10,7 +10,7 @@ export default function page() {
                 <HowItWorks />
                 <CommonQuestions />
             </div>
-            <ReadyDryRefrigeratedTransport />
+            <Ready />
         </>
     )
 };

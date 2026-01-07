@@ -5,12 +5,14 @@ import { ReactNode } from "react";
 interface IFeatures {
   img: string;
   Ttitle: ReactNode;
+  translation: string;
+  translationKey: string;
 }
 
 
-const FeaturesSection = async ({ img, Ttitle }: IFeatures) => {
+const FeaturesSection = async ({ img, Ttitle, translation, translationKey }: IFeatures) => {
 
-  const t = await getTranslations("DryRefrigeratedTransport");
+  const t = await getTranslations(translation);
 
 
   return (
@@ -21,10 +23,10 @@ const FeaturesSection = async ({ img, Ttitle }: IFeatures) => {
           {Ttitle}
         </h2>
         <div className="space-y-4">
-          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t("parcelFeatures.desc.descOne")} />
-          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t("parcelFeatures.desc.descTwo")} />
-          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t("parcelFeatures.desc.descThree")} />
-          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t("parcelFeatures.desc.descFour")} />
+          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t(`${`${translationKey}.desc.descOne`}`)} />
+          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t(`${`${translationKey}.desc.descTwo`}`)} />
+          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t(`${`${translationKey}.desc.descThree`}`)} />
+          <FeaturesComp icon="/assets/primeVerified.png" Tdesc={t(`${`${translationKey}.desc.descFour`}`)} />
         </div>
       </div>
 

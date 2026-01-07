@@ -1,5 +1,17 @@
+import { CommonQuestions, Description, Features, Hero, HowItWorks, Ready } from "@/app/[locale]/customsClearance/_components/index";
+
+
 export default function page() {
     return (
-        <div>page</div>
+        <>
+            <Hero />
+            <div className="px-6 md:px-[50px] lg:px-[70px] xl:px-[100px]">
+                <Description />
+                <Features />
+                <HowItWorks />
+                <CommonQuestions />
+            </div>
+            <Ready />
+        </>
     )
 };

@@ -6,6 +6,7 @@ const Ready = () => {
             <ReadyComp
                 translation="About"
                 translationKey="readyAbout"
+                bgImage="/assets/readyPic.png"
             />
         </>
     )

@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from 'next-intl/server';
-import FeaturesSection from '@/app/[locale]/parcelDelivery/_components/FeaturesSection';
+import FeaturesSection from '@/app/[locale]/dryRefrigeratedTransport/_components/FeaturesSection';
 
 const Features = async () => {
 
@@ -14,7 +14,7 @@ const Features = async () => {
 
   return (
     <section dir={direction} className='py-8 md:py-16'>
-      <FeaturesSection img='/assets/featuresImg.png' Ttitle={t.rich("dryRefrigeratedTransportFeatures.title", { span: (chunks) => <span className='text-primaryMain'>{chunks}</span> })} />
+      <FeaturesSection img='/assets/featuresImg.png' translation='DryRefrigeratedTransport' translationKey='dryRefrigeratedTransportFeatures' Ttitle={t.rich("dryRefrigeratedTransportFeatures.title", { span: (chunks) => <span className='text-primaryMain'>{chunks}</span> })} />
     </section>
   )
 }

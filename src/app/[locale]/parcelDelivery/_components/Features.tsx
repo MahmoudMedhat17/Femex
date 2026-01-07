@@ -14,7 +14,7 @@ const Features = async () => {
 
     return (
         <section dir={direction} className='py-8 md:py-16'>
-            <FeaturesSection img='/assets/featuresImg.png' Ttitle={t.rich("parcelFeatures.title", { span: (chunks) => <span className='text-primaryMain'>{chunks}</span> })} />
+            <FeaturesSection img='/assets/featuresImg.png' translation='ParcelDelivery' translationKey='parcelFeatures' Ttitle={t.rich("parcelFeatures.title", { span: (chunks) => <span className='text-primaryMain'>{chunks}</span> })} />
         </section>
     )
 }

@@ -6,6 +6,7 @@ const Ready = () => {
             <ReadyComp
                 translation="ParcelDelivery"
                 translationKey="readyParcel"
+                bgImage="/assets/parcelReady.png"
             />
         </>
     )

@@ -6,6 +6,7 @@ const ReadyDryRefrigeratedTransport = () => {
             <ReadyComp
                 translation="DryRefrigeratedTransport"
                 translationKey="readyDryRefrigeratedTransport"
+                bgImage="/assets/customsClearanceReady.png"
             />
         </>
     )

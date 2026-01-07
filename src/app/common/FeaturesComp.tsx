@@ -1,7 +1,5 @@
 import { getLocale } from "next-intl/server";
 
-
-
 interface IFeaturesComp {
     icon: string;
     Tdesc: string;

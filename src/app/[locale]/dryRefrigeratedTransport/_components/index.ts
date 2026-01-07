@@ -3,7 +3,7 @@ import Description from "@/app/[locale]/dryRefrigeratedTransport/_components/Des
 import Features from "@/app/[locale]/dryRefrigeratedTransport/_components/Features";
 import Hero from "@/app/[locale]/dryRefrigeratedTransport/_components/Hero";
 import HowItWorks from "@/app/[locale]/dryRefrigeratedTransport/_components/HowItWorks";
-import ReadyDryRefrigeratedTransport from "@/app/[locale]/dryRefrigeratedTransport/_components/ReadyDryRefrigeratedTransport";
+import Ready from "@/app/[locale]/dryRefrigeratedTransport/_components/Ready";
 
 
-export { CommonQuestions, Description, Features, Hero, HowItWorks, ReadyDryRefrigeratedTransport }
+export { CommonQuestions, Description, Features, Hero, HowItWorks, Ready }
