@@ -30,19 +30,21 @@ const ContactUs = () => {
 
 
     const onSubmitForm: SubmitHandler<ContactFormData> = async (data: ContactFormData) => {
-        await emailjs.send(
-            SERVICE_ID,
-            TEMPLATE_ID,
-            {
-                userName: data.userName,
-                email: data.email,
-                phone: data.phone,
-                message: data.message,
-                service: data.service
-            },
-            PUBLIC_ID,
-        )
-        reset();
+        try {
+            const res = await fetch("/api/send", {
+                method: "POST",
+                headers: { "content-type": "application/json" },
+                body: JSON.stringify(data)
+            });
+
+            if (res.ok) {
+                notify();
+                reset();
+            }
+
+        } catch (error) {
+            return console.log("Submission error", error);
+        }
     };
 
     const t = useTranslations("Contact");
