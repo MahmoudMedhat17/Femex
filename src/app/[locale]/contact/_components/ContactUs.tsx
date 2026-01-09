@@ -3,7 +3,6 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import InputField from '@/utils/InputField';
-// import emailjs from '@emailjs/browser';
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { type ContactFormData, contactSchema } from '@/Schemas/ContactSchema';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -12,11 +11,6 @@ import SuccessMessage from '@/utils/SuccessMsg';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
-
-
-// const PUBLIC_ID = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-// const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-// const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
 
 
@@ -30,20 +24,24 @@ const ContactUs = () => {
 
 
     const onSubmitForm: SubmitHandler<ContactFormData> = async (data: ContactFormData) => {
-        try {
-            const res = await fetch("/api/send", {
-                method: "POST",
-                headers: { "content-type": "application/json" },
-                body: JSON.stringify(data)
-            });
 
-            if (res.ok) {
-                notify();
-                reset();
-            }
+        const { email, message, userName, phone, service } = data;
 
-        } catch (error) {
-            return console.log("Submission error", error);
+        const response = await fetch("/api/send", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({
+                email,
+                userName,
+                phone,
+                message,
+                service
+            })
+        })
+
+        // If the response of the form is 200 then reset the form data.
+        if (response.ok) {
+            reset();
         }
     };
 
@@ -73,6 +71,7 @@ const ContactUs = () => {
                 <div className='w-full'>
                     <h2 className='text-[32px] md:text-[40px] text-neutralBlack font-semibold midLineHeight'>{t("contactUs.title")}</h2>
                     <p className='text-[18px] text-neutralDarkGray highLineHeight mb-10'>{t("contactUs.desc")}</p>
+
                     <form onSubmit={handleSubmit(onSubmitForm)} className='space-y-6'>
                         <InputField label={t("contactUs.formDetails.name.label")} error={errors?.userName?.message}>
                             <input type="text" placeholder={t("contactUs.formDetails.name.placeHolder")} {...register("userName")} className='px-4 py-3 border border-neutralSoftGray placeholder:text-[16px] placeholder:text-neutralLightGray placeholder:highLineHeight hover:border-neutralLightGray duration-300 shadow-sm focus:border-primaryMain focus:outline-none rounded-lg' />
