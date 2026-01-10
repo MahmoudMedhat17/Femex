@@ -1,5 +1,4 @@
 import { getTranslations, getLocale } from 'next-intl/server';
-import { Link } from '@/i18n/routing';
 
 
 const Hero = async () => {

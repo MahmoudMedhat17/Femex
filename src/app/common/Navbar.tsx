@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { useTranslations, useLocale } from 'next-intl';
-import { Link, useRouter, usePathname } from "@/i18n/routing";
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import ScrollToTop from "@/utils/ScrollToTop";
-import NavlinkStyle from "@/utils/NavlinkStyle";
+// import NavlinkStyle from "@/utils/NavlinkStyle";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
         const localeState = locale === "ar" ? "en" : "ar";
 
         // Triggers Next to re render the page to show the page with a diff lang.
-        router.push(pathName, { locale: localeState });
+        router.replace(pathName, { locale: localeState });
     };
 
     const isArabic = locale === "ar";
@@ -38,7 +38,7 @@ const Navbar = () => {
 
     const getParamsLink = (href: string) => {
         const isActive = pathName === href;
-        return isActive ? `${NavlinkStyle}` : "";
+        return isActive;
     };
 
     return (
@@ -46,40 +46,40 @@ const Navbar = () => {
             <div className="mx-auto flex items-center justify-between h-16 px-6 md:px-12.5 lg:px-17.5 xl:px-25">
 
                 <div className="flex items-center lg:gap-12.5 xl:gap-22">
-                    <Link onClick={ScrollToTop} href="/">
+                    <Link onClick={ScrollToTop} scroll={true} href="/">
                         <img src="/assets/logo.png" alt="logo" className="w-18 lg:w-24" />
                     </Link>
 
                     <nav className="hidden lg:flex items-center gap-10 w-full relative">
                         <span className="cursor-pointer text-neutralLightGray hover:text-primaryMain duration-500 highLineHeight">
-                            <Link href="/" className={getParamsLink("/")}>
+                            <Link href="/" className={getParamsLink("/") ? "text-primaryMain" : ""}>
                                 {t("navbar.home")}
                             </Link>
                         </span>
                         <span className="cursor-pointer text-neutralLightGray hover:text-primaryMain duration-500 highLineHeight">
-                            <Link href="/about" className={getParamsLink("/about")}>
+                            <Link href="/about" className={getParamsLink("/about") ? "text-primaryMain" : ""}>
                                 {t("navbar.about")}
                             </Link>
                         </span>
                         <div className="flex items-center justify-center gap-1.5 h-16 group">
                             <div className="absolute top-16 bg-neutralWhite w-1/2 space-y-4 py-4 hidden group-hover:block shadow-lg">
                                 <p className="text-center cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full">
-                                    <Link href="/parcelDelivery" className={getParamsLink("/parcelDelivery")}>
+                                    <Link href="/parcelDelivery" className={getParamsLink("/parcelDelivery") ? "text-primaryMain" : ""}>
                                         {t("navbar.dropDownMenu.parcelDelivery")}
                                     </Link>
                                 </p>
                                 <p className="text-center cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full">
-                                    <Link href="/dryRefrigeratedTransport" className={getParamsLink("/dryRefrigeratedTransport")}>
+                                    <Link href="/dryRefrigeratedTransport" className={getParamsLink("/dryRefrigeratedTransport") ? "text-primaryMain" : ""}>
                                         {t("navbar.dropDownMenu.dryRefrigeratedTransport")}
                                     </Link>
                                 </p>
                                 <p className="text-center cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full">
-                                    <Link href="/storageService" className={getParamsLink("/storageService")}>
+                                    <Link href="/storageService" className={getParamsLink("/storageService") ? "text-primaryMain" : ""}>
                                         {t("navbar.dropDownMenu.storageService")}
                                     </Link>
                                 </p>
                                 <p className="text-center cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full">
-                                    <Link href="/customsClearance" className={getParamsLink("/customsClearance")}>
+                                    <Link href="/customsClearance" className={getParamsLink("/customsClearance") ? "text-primaryMain" : ""}>
                                         {t("navbar.dropDownMenu.customsClearance")}
                                     </Link>
                                 </p>
@@ -102,7 +102,7 @@ const Navbar = () => {
                             }
                         </div>
                         <span className="cursor-pointer text-neutralLightGray hover:text-primaryMain highLineHeight">
-                            <Link href="/contact" className={getParamsLink("/contact")}>
+                            <Link href="/contact" className={getParamsLink("/contact") ? "text-primaryMain" : ""}>
                                 {t("navbar.contact")}
                             </Link>
                         </span>
@@ -148,12 +148,12 @@ const Navbar = () => {
             {openMenu && (
                 <div className={`lg:hidden px-6 py-4 space-y-4 ${isArabic ? "text-left" : "text-right"}`}>
                     <span className="w-fit block cursor-pointer hover:text-primaryMain text-neutralLightGray duration-500 highLineHeight">
-                        <Link href="/" className={getParamsLink("/")} onClick={handleLinkCloseClick}>
+                        <Link href="/" className={getParamsLink("/") ? "text-primaryMain" : ""} onClick={handleLinkCloseClick}>
                             {t("navbar.home")}
                         </Link>
                     </span>
                     <span className="w-fit block cursor-pointer hover:text-primaryMain text-neutralLightGray duration-500 highLineHeight">
-                        <Link href="/about" className={getParamsLink("/about")} onClick={handleLinkCloseClick}>
+                        <Link href="/about" className={getParamsLink("/about") ? "text-primaryMain" : ""} onClick={handleLinkCloseClick}>
                             {t("navbar.about")}
                         </Link>
                     </span>
@@ -179,22 +179,22 @@ const Navbar = () => {
                             mobServices && (
                                 <div onClick={handleLinkCloseClick} className={`w-full block space-y-4 py-4 text-start`}>
                                     <p className="cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full p-2">
-                                        <Link href="/parcelDelivery" className={getParamsLink("/parcelDelivery")}>
+                                        <Link href="/parcelDelivery" className={getParamsLink("/parcelDelivery") ? "text-primaryMain" : ""}>
                                             {t("navbar.dropDownMenu.parcelDelivery")}
                                         </Link>
                                     </p>
                                     <p className="cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full p-2">
-                                        <Link href="/dryRefrigeratedTransport" className={getParamsLink("/dryRefrigeratedTransport")}>
+                                        <Link href="/dryRefrigeratedTransport" className={getParamsLink("/dryRefrigeratedTransport") ? "text-primaryMain" : ""}>
                                             {t("navbar.dropDownMenu.dryRefrigeratedTransport")}
                                         </Link>
                                     </p>
                                     <p className="cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full p-2">
-                                        <Link href="/storageService" className={getParamsLink("/storageService")}>
+                                        <Link href="/storageService" className={getParamsLink("/storageService") ? "text-primaryMain" : ""}>
                                             {t("navbar.dropDownMenu.storageService")}
                                         </Link>
                                     </p>
                                     <p className="cursor-pointer text-neutralLightGray highLineHeight hover:bg-primarySoft hover:text-primaryMain duration-400 w-full p-2">
-                                        <Link href="/customsClearance" className={getParamsLink("/customsClearance")}>
+                                        <Link href="/customsClearance" className={getParamsLink("/customsClearance") ? "text-primaryMain" : ""}>
                                             {t("navbar.dropDownMenu.customsClearance")}
                                         </Link>
                                     </p>
@@ -203,7 +203,7 @@ const Navbar = () => {
                         }
                     </span>
                     <span className="w-fit block cursor-pointer hover:text-primaryMain text-neutralLightGray duration-500 highLineHeight">
-                        <Link href="/contact" className={getParamsLink("/contact")} onClick={handleLinkCloseClick}>
+                        <Link href="/contact" className={getParamsLink("/contact") ? "text-primaryMain" : ""} onClick={handleLinkCloseClick}>
                             {t("navbar.contact")}
                         </Link>
                     </span>

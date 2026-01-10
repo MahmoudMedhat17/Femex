@@ -1,12 +1,11 @@
-
 interface EmailTemplateProps {
-    userName: string;
+    name: string;
 }
 
-export function EmailTemplate({ userName }: EmailTemplateProps) {
+export function EmailTemplate({ name }: EmailTemplateProps) {
     return (
         <div>
-            <h1>Welcome, {userName}!</h1>
+            <h1>Welcome, {name}!</h1>
         </div>
     );
 }

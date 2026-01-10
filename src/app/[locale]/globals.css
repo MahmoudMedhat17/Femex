@@ -6,6 +6,10 @@
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-primaryDark: #79561E;
   --color-primaryMain: #BF8D3C;

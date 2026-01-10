@@ -16,14 +16,7 @@ export default async function Services() {
 
     // Here we apply the translation of each card of the servicesData before passing this variable as a props to the client component.
     let reversedServicesData = servicesData.map((service) => (
-        {
-            ...service,
-            route: (service.route),
-            img: t(service.img),
-            title: t(service.title),
-            desc: t(service.desc),
-            btn: t(service.btn)
-        }
+        { ...service, }
     ));
 
     // Here this is a function that checks the lang. first, if it's "AR" then switch the position of the cards from right to left and vice versa.
@@ -63,16 +56,16 @@ export default async function Services() {
                     {
                         reversedServicesData.map((data, index) => (
                             <div key={index} className="flex flex-col justify-between border border-neutralSoftGray p-4 rounded-2xl h-full">
-                                <img src={data.img} className="w-full" />
+                                <img src={t(data.img)} className="w-full" />
                                 <div className="space-y-2 mt-6 mb-4">
-                                    <h4 className={`text-xl font-semibold midLineHeight ${isArabic ? "text-right" : "text-left"}`}>{data.title}</h4>
+                                    <h4 className={`text-xl font-semibold midLineHeight ${isArabic ? "text-right" : "text-left"}`}>{t(data.title)}</h4>
                                     <p className={`text-md font-normal text-neutralDarkGray highLineHeight ${isArabic ? "text-right" : "text-left"}`}>
-                                        {data.desc}
+                                        {t(data.desc)}
                                     </p>
                                 </div>
                                 <button className="w-full bg-primarySoft text-primaryDark border border-primaryMain hover:bg-primaryDark hover:text-white duration-500 rounded-lg px-4 py-3 cursor-pointer smallLineHeight">
                                     <Link href={data.route}>
-                                        {data.btn}
+                                        {t(data.btn)}
                                     </Link>
                                 </button>
                             </div>

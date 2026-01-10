@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { aboutServicesData } from "@/data/AboutServicesData";
 
 const Services = async () => {
@@ -39,7 +39,7 @@ const Services = async () => {
                     }
                 </div>
                 <button className="bg-primaryMain text-white hover:bg-primaryDark duration-500 cursor-pointer p-4 rounded-lg font-semibold smallLineHeight w-fit">
-                    <Link to="/contact">
+                    <Link href="/contact">
                         {t("services.button")}
                     </Link>
                 </button>

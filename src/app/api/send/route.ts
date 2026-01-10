@@ -8,7 +8,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request:Request){
         
-    const {email} = await request.json();
+    const {email, userName} = await request.json();
 
 
     try {
@@ -16,7 +16,7 @@ export async function POST(request:Request){
             from: "FEMEX <onboarding@resend.dev>",
             to: "m7moooud.17@gmail.com",
             subject: "Hello From FEMEX!",
-            react: EmailTemplate({ userName: "Mahmoud" }),
+            react: EmailTemplate({ name: userName }),
             replyTo:email
         });
 

@@ -1,5 +1,5 @@
 import { useTranslations, useLocale } from 'next-intl';
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
