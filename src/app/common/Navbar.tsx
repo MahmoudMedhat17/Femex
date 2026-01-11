@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import ScrollToTop from "@/utils/ScrollToTop";
-// import NavlinkStyle from "@/utils/NavlinkStyle";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
@@ -46,13 +45,13 @@ const Navbar = () => {
             <div className="mx-auto flex items-center justify-between h-16 px-6 md:px-12.5 lg:px-17.5 xl:px-25">
 
                 <div className="flex items-center lg:gap-12.5 xl:gap-22">
-                    <Link onClick={ScrollToTop} scroll={true} href="/">
+                    <Link href="/">
                         <img src="/assets/logo.png" alt="logo" className="w-18 lg:w-24" />
                     </Link>
 
                     <nav className="hidden lg:flex items-center gap-10 w-full relative">
                         <span className="cursor-pointer text-neutralLightGray hover:text-primaryMain duration-500 highLineHeight">
-                            <Link href="/" className={getParamsLink("/") ? "text-primaryMain" : ""}>
+                            <Link href="/" onClick={ScrollToTop} className={getParamsLink("/") ? "text-primaryMain" : ""}>
                                 {t("navbar.home")}
                             </Link>
                         </span>

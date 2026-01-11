@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { getMessages } from 'next-intl/server';
 import Navbar from "@/app/common/Navbar";
 import Footer from "@/app/common/Footer";
+// import ScrollToTop from "@/utils/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +48,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
+          {/* <ScrollToTop /> */}
           <Navbar />
           {children}
           <Footer />

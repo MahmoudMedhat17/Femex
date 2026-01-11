@@ -3,7 +3,6 @@ import { Link } from "@/i18n/navigation";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
-import ScrollToTop from "@/utils/ScrollToTop";
 
 
 
@@ -61,7 +60,7 @@ const Footer = () => {
                         </p>
                         <ul className="space-y-4">
                             <li className="text-neutralLightGray hover:text-primaryMain duration-500 cursor-default highLineHeight w-fit">
-                                <Link href="/" onClick={ScrollToTop}>
+                                <Link href="/">
                                     {t("footer.home")}
                                 </Link>
                             </li>
